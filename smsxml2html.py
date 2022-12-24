@@ -152,7 +152,7 @@ def dumpConversations(base_path, conversations, carrier_number):
         for address, conversation in conversations.items():
                 output_path = os.path.join(base_path, address + '.html')
 
-                with open(output_path, 'w') as f:
+                with open(output_path, 'w', encoding="utf-8") as f:
 
                         f.write('<html><head><meta charset="UTF-8"><link rel="stylesheet" type="text/css" href="stylesheet.css" /></head><body>' + "\n")
 
